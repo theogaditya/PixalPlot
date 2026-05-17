@@ -1,8 +1,3 @@
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __dirname = fileURLToPath(new URL(".", import.meta.url));
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typescript: {
@@ -11,8 +6,6 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  // Fix monorepo module resolution — Clerk is hoisted to repo root
-  outputFileTracingRoot: path.join(__dirname, "../../"),
   async headers() {
     return [
       // COOP/COEP only on the WebContainer project editor (needed for SharedArrayBuffer)
