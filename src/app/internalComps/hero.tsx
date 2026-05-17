@@ -167,7 +167,7 @@ export function Hero() {
       </div>
 
       {/* ── How it works ── */}
-      <div className="relative z-10 py-24 px-4">
+      {/* <div className="relative z-10 py-24 px-4">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -202,7 +202,7 @@ export function Hero() {
             />
           </div>
         </motion.div>
-      </div>
+      </div> */}
     </div>
   );
 }
