@@ -1,0 +1,13 @@
+{
+  "name": "dockstudio-api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:push": "prisma db push"
+  },
+  "devDependencies": {
+    "prisma": "5.17.0"
+  }
+}
